@@ -1,0 +1,97 @@
+1. CSS
+
+꾸며줄 tag 바로 앞에 쓰고 중괄호 쓰고 한줄씩 써나가며 마지막엔 ; 사용
+
+ex)
+
+p {
+  text-align: center;
+  color: #black;
+}
+
+
+text-align = 텍스트 위치  / center , right, left, top
+
+font-size = 폰트 크기 / 단위 : px;
+
+font-weight = 폰트의 두께 / 얇게 ligth / 더 얇게 lighter / 두껍게 bold / 일반두께 normal
+
+font-style = 폰트 스타일 / italic : 기울기
+
+color = 색깔 / 원하는거 있을때 html color code 들어가서 확인하기
+
+background-color = 배경 색깔
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+2. class 불러오기
+
+tag 들을 사용하고 뒤에 class를 붙히게 되는데 이때 class 는 tag 가 아니므로 . 을 붙혀줘야함
+
+ex)
+
+.big font {
+  font-size: 30px;
+  color: #black;
+}
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+3. 박스
+
+width = 가로길이 / 단위  px;
+height = 세로길이 / 단위 px;
+
+
+3 - 1 박스 크기 분류
+
+외부 margin / 박스 전체
+다음 border / 주변테두리
+다음 padding
+다음 content
+
+margin = margin 크기 / 단위 px;
+margin-left: auto;          박스의 중앙정렬을 위해 필요함
+margin-right: auto;
+
+border = border 크기 / 단위 px;
+
+padding = padding 크기 / 단위 px;
+
+
+3 - 2 박스 그림자
+
+box-shadow:0 1px 20px 0 rgba(0,0,0,0.1);
+
+
+첫번째 0 = 가로축 그림자 이동
+두번째 1px = y축 그림자 이동
+세번째 20ox = 그림자의 흐림정도 즉 블록값
+
+rgba = 순서대로 red, green, blue, alpha(투명도) / 0은 없는값 검정색, 255 가장 밝은색
+
+
+4 폰트 바꾸는법
+
+가장 좋은 방법은 google에 있는 폰트 쓰기
+
+적용방법
+
+@import url(주소);
+
+
+* = 문서 전체에 적용하라는 뜻
+
+* {
+  font-family: '~~~';
+}
+
+
+
+
+
+
+
+
+
+
